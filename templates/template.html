@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        .lightgreen{
+            background: #004445;
+        }
+        .palegreen{
+            background:#2C7873
+        }
+        .no-gutter > [class*='col-'] {
+           padding-right:0;
+           padding-left:0;
+        }
+        h3{
+            font-size:3.1rem;
+        }
+        @media (max-width: 768px) {
+             h3{
+
+                font-size: 2.2rem;
+             }
+        }
+        @media only screen and (min-width: 768px)  {
+            .space-holder{
+            display:none;
+            }
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-light">
+
+    <div class="container">
+
+        <div class="row">
+            <h1 class="mt-4 mb-2">Top Lofi Hip-Hop Streams</h1>
+        </div>
+
+        <hr>
+
+    {% for i in range(0,len) %}
+        <div class="row no-gutter mb-4 border text-light">
+
+
+
+            <div  class="col-md-1 col-1 bg-dark text-light pt-2 pl-3">
+                <span>{{i +1}}</span>
+            </div>
+
+
+
+
+            <div class="col-md-2 col-6 bg-light text-center">
+                <a href={{stream_list[i]['url']}}><img class="img-fluid padding-md" src={{stream_list[i]['thumb']}}></a>
+            </div>
+
+
+
+
+
+            <div class="col-md-3 col-5 d-flex align-items-center justify-content-center text-center lightgreen">
+                <div>
+                    <h3 class="mb-1">{{stream_list[i]['viewers']}}</h3>
+                    <h6>watching now</h6>
+                </div>
+            </div>
+
+
+
+            <div class="space-holder col-md-0 col-1 bg-dark"></div>
+
+            <div class="col-md-6 col-11 d-flex align-items-center palegreen ">
+                <div class="container">
+                    <p>{{stream_list[i]['title']}}</p>
+                    <h5>{{stream_list[i]['channel']}}</h5>
+                </div>
+            </div>
+
+
+        </div>
+
+        {% endfor %}
+    </div>
 </body>
 </html>
