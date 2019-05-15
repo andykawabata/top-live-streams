@@ -45,6 +45,7 @@ def home():
     custom_item_list = []
 
     index = 0
+
     for item in items:
         title = item['snippet']['title']
         viewers = item['liveStreamingDetails']['concurrentViewers']
@@ -56,7 +57,7 @@ def home():
                                  'thumb': thumb, 
                                  'channel': channel, 
                                  'url': url})
-        index += index
+        index = index + 1
 
     def item_sort(video):
         return video['viewers']
@@ -64,7 +65,6 @@ def home():
     custom_item_list.sort(key=item_sort, reverse=True)
 
     return render_template('template.html', len=len(custom_item_list), stream_list=custom_item_list)
-
 
 
 
