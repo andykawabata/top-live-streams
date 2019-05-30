@@ -21,10 +21,17 @@
             font-size:3.1rem;
         }
         @media (max-width: 768px) {
+            body{
+                padding: 0 8px 0 8px;
+            }
              h3{
 
                 font-size: 2.2rem;
              }
+             #dark-mobile{
+             background-color: black!important;
+             }
+
         }
         @media only screen and (min-width: 768px)  {
             .space-holder{
@@ -48,14 +55,14 @@
 
 
 
-            <div  class="col-md-1 col-1 bg-dark text-light pt-2 pl-3">
+            <div  class="col-md-1 col-1 bg-dark text-light pt-2 pl-1">
                 <span>{{i +1}}</span>
             </div>
 
 
 
 
-            <div class="col-md-2 col-6 bg-light text-center">
+            <div id="dark-mobile" class="col-md-2 col-6 bg-light text-center">
                 <a href={{stream_list[i]['url']}}><img class="img-fluid padding-md" src={{stream_list[i]['thumb']}}></a>
             </div>
 

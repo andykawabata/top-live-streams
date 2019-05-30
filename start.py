@@ -67,4 +67,3 @@ def home():
 
     return render_template('template.html', len=len(custom_item_list), stream_list=custom_item_list)
 
-
