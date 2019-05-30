@@ -47,17 +47,18 @@ def home():
     index = 0
 
     for item in items:
-        title = item['snippet']['title']
-        viewers = item['liveStreamingDetails']['concurrentViewers']
-        thumb = item['snippet']['thumbnails']['default']['url']
-        channel = item['snippet']['channelTitle']
-        url = "https://www.youtube.com/watch?v=" + IDS[index]
-        custom_item_list.append({'title': title, 
-                                 'viewers': int(viewers), 
-                                 'thumb': thumb, 
-                                 'channel': channel, 
-                                 'url': url})
-        index = index + 1
+        if 'concurrentViewers' in item['liveStreamingDetails'].keys():
+            title = item['snippet']['title']
+            viewers = item['liveStreamingDetails']['concurrentViewers']
+            thumb = item['snippet']['thumbnails']['default']['url']
+            channel = item['snippet']['channelTitle']
+            url = "https://www.youtube.com/watch?v=" + IDS[index]
+            custom_item_list.append({'title': title,
+                                     'viewers': int(viewers),
+                                     'thumb': thumb,
+                                     'channel': channel,
+                                     'url': url})
+            index = index + 1
 
     def item_sort(video):
         return video['viewers']
@@ -67,4 +68,4 @@ def home():
     return render_template('template.html', len=len(custom_item_list), stream_list=custom_item_list)
 
 
-
+app.run(debug=True)
