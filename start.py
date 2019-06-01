@@ -31,7 +31,6 @@ for this_id in IDS:
     ID_string += this_id + ", "
 ID_string = ID_string[:-2]
 
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -66,4 +65,3 @@ def home():
     custom_item_list.sort(key=item_sort, reverse=True)
 
     return render_template('template.html', len=len(custom_item_list), stream_list=custom_item_list)
-

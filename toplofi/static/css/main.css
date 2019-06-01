@@ -1,0 +1,36 @@
+.lightgreen {
+    background: #004445;
+}
+.palegreen {
+    background:#2C7873
+}
+.no-gutter > [class*='col-'] {
+   padding-right:0;
+   padding-left:0;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+h3 {
+    font-size:3.1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 8px 0 8px;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
+     #dark-mobile {
+     background-color: black!important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .space-holder {
+        display:none;
+    }
+}
