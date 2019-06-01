@@ -1,6 +1,6 @@
 from apiclient.discovery import build
 
-toplofi_api_key = "AIzaSyARq6_0FJAeuvQyz7RF93nMl2yVI3Owtos"
+toplofi_api_key = ""
 
 def getStreams(api_key=toplofi_api_key, maxResults=25):
     streams = []
