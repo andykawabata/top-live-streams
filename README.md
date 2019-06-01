@@ -1,4 +1,4 @@
-# Top-Lofi
+# Lofi_Stream_Ranking_v1
 
 ## Run locally
 
@@ -6,8 +6,8 @@
 
 Clone
 ```
-$ git clone "https://github.com/hvrc/Top-Lofi.git"
-$ cd Top-Lofi
+$ git clone "https://github.com/hvrc/Lofi_Stream_Ranking_v1.git"
+$ cd Lofi_Stream_Ranking_v1
 ```
 
 Run the shell script on a Mac...
@@ -25,8 +25,8 @@ $ start run.bat
 
 Clone
 ```
-$ git clone "https://github.com/hvrc/Top-Lofi.git"
-$ cd Top-Lofi
+$ git clone "https://github.com/hvrc/Lofi_Stream_Ranking_v1.git"
+$ cd Lofi_Stream_Ranking_v1
 ```
 
 Create a virtualenv & activate it
