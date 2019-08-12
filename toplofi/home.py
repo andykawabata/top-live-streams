@@ -4,5 +4,5 @@ from flask import render_template
 
 @app.route("/")
 def home():
-    streams = getStreams(maxResults=25)
+    streams = getStreams(maxResults=20)
     return render_template("home.html", streams=streams)
