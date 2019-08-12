@@ -1,5 +1,7 @@
 # Lofi_Stream_Ranking_v1
 
+Hosted at https://lofi-stream-ranking.herokuapp.com/
+
 ## Run locally
 
 ### Method 1:
