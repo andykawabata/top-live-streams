@@ -39,7 +39,7 @@ def getStreams(api_key=toplofi_api_key, maxResults=25):
         for detail in detailsResponse:
             try:
                 viewers = "{:,}".format(int(detail["liveStreamingDetails"]["concurrentViewers"]))
-                thumbnail = detail["snippet"]["thumbnails"]["maxres"]["url"]
+                thumbnail = detail["snippet"]["thumbnails"]["default"]["url"]
                 liveChatId = detail["liveStreamingDetails"]["activeLiveChatId"]
                 liveChatURL = "https://www.youtube.com/live_chat?v=" + liveChatId
             except KeyError as e:
