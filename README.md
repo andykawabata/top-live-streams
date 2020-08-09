@@ -1,6 +1,7 @@
-# Lofi_Stream_Ranking_v1
+# Lofi Stream Ranking
 
-Hosted at https://lofi-stream-ranking.herokuapp.com/
+### Hosted at 
+https://lofi-stream-ranking.herokuapp.com/
 
 ## Run locally
 
