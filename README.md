@@ -1,5 +1,5 @@
 # Lofi Stream Ranking
-
+Ranks Youtube Lofi Hip Hop streams by number of people currently watching
 ### Hosted at 
 https://lofi-stream-ranking.herokuapp.com/
 
