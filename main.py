@@ -1,8 +1,8 @@
 from apiclient.discovery import build
 
-toplofi_api_key = "AIzaSyBK8ibmhkd_q4MZz2O-rQk_t7fYMkvv9G4"
+toplofi_api_key = "AIzaSyBpRVWtR3Il_xD_-sI10_hx2ytpe6NeZ_k"
 
-def getStreams(api_key=toplofi_api_key, maxResults=25):
+def getStreams(_tag, api_key=toplofi_api_key, maxResults=25):
     streams = []
     youtube = build("youtube", "v3", developerKey=api_key)
 
@@ -11,7 +11,7 @@ def getStreams(api_key=toplofi_api_key, maxResults=25):
         eventType="live",
         maxResults=maxResults,
         order="viewCount",
-        q="music",
+        q=_tag,
         type="video"
     ).execute()
 

@@ -22,8 +22,15 @@
 
     <body class="bg-light">
         <div class="container">
+            <h4 style="margin-top: 10px">Enter a tag</h4>
+            <form action="" method="GET">
+                <input type="text" name="tag"/>
+                <button type="submit">Search</button>
+            </form>
+            <p>For example, entering 'music' will list the top current youtube live streams with the tag #music</p>
+
             <div class="row">
-                <h1 class="mt-4 mb-2">Top <mark>lofi</mark> Streams</h1>
+                <h1 class="mt-4 mb-2">Top <mark>{{tag}}</mark> Streams</h1>
             </div>
             <hr>
 
