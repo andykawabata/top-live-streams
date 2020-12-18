@@ -1,7 +1,8 @@
-# Lofi Stream Ranking
-Ranks Youtube Lofi Hip Hop streams by number of people currently watching
+# Top Live Streams
+This app lists the the top youtube live streams associated with a tag, specified by the user. The app defaults to the tag '#lofi' when the page loads. This app was build using the Python framework Flask, and uses Google's YouTube API.
+
 ### Hosted at 
-https://lofi-stream-ranking.herokuapp.com/
+https://top-live-streams.herokuapp.com/
 
 ## Run locally
 
