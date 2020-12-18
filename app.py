@@ -1,4 +1,4 @@
-from toplofi.main import *
+from main import *
 from flask import render_template
 from flask import Flask
 from config import Config

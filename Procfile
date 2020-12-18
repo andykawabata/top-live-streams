@@ -1,1 +1,1 @@
-web: gunicorn --chdir /toplofi app:app
+web: gunicorn app:app
