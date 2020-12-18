@@ -11,7 +11,7 @@ def getStreams(api_key=toplofi_api_key, maxResults=25):
         eventType="live",
         maxResults=maxResults,
         order="viewCount",
-        q="lofi",
+        q="music",
         type="video"
     ).execute()
 
