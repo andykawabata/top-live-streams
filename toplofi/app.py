@@ -12,4 +12,4 @@ def home():
     return render_template("home.html", streams=streams)
 
 if __name__ == "__main__":
-    app.run(Debug=True)
+    app.run(debug=True)
