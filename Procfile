@@ -1,1 +1,1 @@
-web: gunicorn toplofi:app
+web: gunicorn toplofi:app:app
