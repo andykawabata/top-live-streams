@@ -40,8 +40,8 @@ def getStreams(_tag, api_key=toplofi_api_key, maxResults=25):
             try:
                 viewers = "{:,}".format(int(detail["liveStreamingDetails"]["concurrentViewers"]))
                 thumbnail = detail["snippet"]["thumbnails"]["medium"]["url"]
-                liveChatId = detail["liveStreamingDetails"]["activeLiveChatId"]
-                liveChatURL = "https://www.youtube.com/live_chat?v=" + liveChatId
+                #liveChatId = detail["liveStreamingDetails"]["activeLiveChatId"]
+                #liveChatURL = "https://www.youtube.com/live_chat?v=" + liveChatId
             except KeyError as e:
                 viewers = 0
                 thumbnail = "None"
@@ -56,8 +56,7 @@ def getStreams(_tag, api_key=toplofi_api_key, maxResults=25):
             "ChannelURL": channelURL,
             "Viewers": viewers,
             "PublishedAt": date,
-            "Thumbnail": thumbnail,
-            "liveChatURL": liveChatURL
+            "Thumbnail": thumbnail
         }
 
         streams.append(streamData)
